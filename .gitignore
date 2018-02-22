@@ -1,2 +1,5 @@
 .*.swp
 .vscode
+*.exe
+*.o
+
