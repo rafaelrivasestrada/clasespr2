@@ -14,12 +14,14 @@ int main() {
    // Inicializar en 0 el tiempo total acumulado
    asignaLapsoTiempo( &total, 0, 0, 0);
 
-   printf("Introduzca el tiempo usado en estudiar especifidao en Horas, minutos y segundos: ");
+   printf("Introduzca el tiempo usado en estudiar especifidado en Horas, minutos y segundos: ");
    scanf("%d", &h);
    scanf("%d", &m);
    scanf("%d", &s);
    //asignaLapsoTiempo( &estudiar, 8, 59, 64);
    asignaLapsoTiempo( &estudiar, h, m, s);
+   estudiar.minutos = 80;
+   estudiar.segundos = -1000;
 
    printf("Introduzca el tiempo usado en comer especifidao en Horas, minutos y segundos: ");
    scanf("%d", &h);
