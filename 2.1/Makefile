@@ -5,13 +5,13 @@ OPC = -g
 
 all: programa.exe
 
-programa.exe: 
+programa.exe:	programa.o semaforo.o
 	g++ -g -o $@ $^
 
 programa.o: main.cpp
-	g++ -g -I ../include -c $^
+	g++ -g -I ../include -c $^ -o $@
 
-source.o: ../src/source.cpp
+semaforo.o: ../src/semaforo.cpp
 	g++ -g -I ../include -c $^
 
 clean: 
