@@ -9,10 +9,10 @@ programa.exe:	programa.o semaforo.o
 	g++ -g -o $@ $^
 
 programa.o: main.cpp
-	g++ -g -I ../include -c $^ -o $@
+	g++ -g -I ../include -c $< -o $@
 
 semaforo.o: ../src/semaforo.cpp
-	g++ -g -I ../include -c $^
+	g++ -g -I ../include -c $<
 
 clean: 
 	rm -f *.o *.exe
