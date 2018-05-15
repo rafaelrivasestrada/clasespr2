@@ -15,9 +15,14 @@ int main()
 	std::string s;
 	int a;
 
-	std::cout<<"Cantidad de archivos que quiere: ";
-	std::cin>>n;//n: cantidad de archivos
-	
+	do
+	{
+		std::cout<<"Cantidad de archivos que quiere: ";
+		std::cin>>n;//n: cantidad de archivos
+		if(n>100) std::cout<<"La cantidad de archivos debe ser menor o igual que 100\n"<<std::endl;
+
+	}while(n>100);
+
 	nums = 100/n;
 	resto = 100%n;
 	
